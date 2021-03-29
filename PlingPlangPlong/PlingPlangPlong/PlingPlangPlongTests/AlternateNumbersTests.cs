@@ -17,7 +17,7 @@ namespace PlingPlangPlongTests
         [TestCase(0, 0, 0, 0)]
         public void GetPlingPlangPlong_ReturnsString(int pling, int plang, int plong, int num)
         {
-            PlingPlangPlongClass sut = new PlingPlangPlongClass(pling, plang, plong);
+            Raindrops sut = new Raindrops(pling, plang, plong);
             var result = sut.GetPlingPlangPlong(num);
             Assert.That(result, Is.InstanceOf<string>());
         }
@@ -28,7 +28,7 @@ namespace PlingPlangPlongTests
         [TestCase(0, 0, 0, 0)]
         public void GetPlingPlangPlong_DoesNotReturnNull(int pling, int plang, int plong, int num)
         {
-            PlingPlangPlongClass sut = new PlingPlangPlongClass(pling, plang, plong);
+            Raindrops sut = new Raindrops(pling, plang, plong);
             var result = sut.GetPlingPlangPlong(num);
             Assert.That(result, Is.Not.Null);
         }
@@ -41,7 +41,7 @@ namespace PlingPlangPlongTests
         [TestCase(0, 0, 0, 0,"0")]
         public void GetPlingPlangPlong_ReturnsCorrectString(int pling, int plang, int plong, int num, string expected)
         {
-            PlingPlangPlongClass sut = new PlingPlangPlongClass(pling, plang, plong);
+            Raindrops sut = new Raindrops(pling, plang, plong);
             var result = sut.GetPlingPlangPlong(num);
             Assert.That(result, Is.EqualTo(expected));
         }

@@ -4,7 +4,7 @@ namespace PlingPlangPlongTests
 {
     public class StandardNumberTests
     {
-        public PlingPlangPlongClass _sut = new PlingPlangPlongClass();
+        public Raindrops _sut = new Raindrops();
 
         [Test]
         public void GetPlingPlangPlong_ReturnsString()
